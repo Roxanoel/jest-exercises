@@ -22,4 +22,8 @@ test('not a string', () => {
 
 test('string starts with non-letter character', () => {
     expect(capitalize('"this apple"')).toBe('"This apple"');
-})
+});
+
+test('letters with accents', () => {
+    expect(capitalize('épée')).toBe('Épée');
+});
