@@ -147,7 +147,6 @@
     "path-key": "^3.1.1",
     "path-parse": "^1.0.7",
     "picocolors": "^1.0.0",
-    "picomatch": "^2.3.1",
     "pirates": "^4.0.5",
     "pkg-dir": "^4.2.0",
     "pretty-format": "^28.1.3",
