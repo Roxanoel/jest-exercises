@@ -2,6 +2,7 @@
 // character capitalized.
 
 const { expect } = require('expect');
+const { test } = require('picomatch');
 const capitalize = require('./capitalize');
 
 test('single word, lowercase', () => {
@@ -15,3 +16,11 @@ test('two words, lowercase', () => {
 test('one word, all uppercase', () => {
     expect(capitalize('APPLE')).toBe('Apple');
 });
+
+test('not a string', () => {
+    expect(capitalize(13).toBe('Not a string'));
+});
+
+test('string starts with non-letter character', () => {
+    expect(capitalize('"this apple"')).toBe('"This apple"');
+})
