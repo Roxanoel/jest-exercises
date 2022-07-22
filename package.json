@@ -3,7 +3,8 @@
     "jest": "^28.1.3"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "watch": "jest --watch *.js"
   },
   "name": "jest-exercises",
   "version": "1.0.0",
