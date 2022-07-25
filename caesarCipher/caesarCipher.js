@@ -1,13 +1,14 @@
 function caesarCipher(string, key) {
     // declare a variable for the cipher text
+    let lowercaseString = string.toLowerCase();
     let result = '';
     // go through each character, check if it is a letter 
-    for (let i = 0; i < string.length; i++) {
-        if(isLetter(string[i])) {
+    for (let i = 0; i < lowercaseString.length; i++) {
+        if(isLetter(lowercaseString[i])) {
             // use charcode to get the shifted character
-            result += getShiftedChar(string[i], key);
+            result += getShiftedChar(lowercaseString[i], key);
         } else {
-            result += string[i];
+            result += lowercaseString[i];
         }
     }
     return result;

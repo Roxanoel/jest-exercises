@@ -23,7 +23,7 @@ test('works with string of more than one word (preserves spaces).', () => {
 });
 
 test('works with punctuation', () => {
-    expect(caesarCipher('attack, at dawn.', 5).toBe('fyyfhp, fy ifbs.'));
+    expect(caesarCipher('attack, at dawn.', 5)).toBe('fyyfhp, fy ifbs.');
 });
 
 test('works no matter the case', () => {
@@ -31,7 +31,7 @@ test('works no matter the case', () => {
 });
 
 test('wraps correctly.', () => {
-    expect('attackz at dawnz', 5).toBe('fyyfhpe fy ifbse');
+    expect(caesarCipher('attackz at dawnz', 5)).toBe('fyyfhpe fy ifbse');
 });
 
 test('only accepts strings as 1st param.', () => {
