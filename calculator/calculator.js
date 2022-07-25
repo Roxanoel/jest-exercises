@@ -12,7 +12,10 @@ const calculator = (() => {
         multiply: (num1, num2) => { 
             return (num1 * num2);
          },
-        divide: () => { console.log('not implemented') },
+        divide: (num1, num2) => { 
+            if (num2 === 0) throw new Error('Cannot divide by zero.');
+            return num1 / num2;
+         },
     }
     
 })();
