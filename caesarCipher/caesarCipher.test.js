@@ -11,3 +11,28 @@ Just the public ones. So in this case you only need tests for the final caesarCi
 If it works as expected you can rest assured that your smaller helper functions are doing what 
 they’re supposed to. */ 
 
+const caesarCipher = require('./caesarCipher');
+
+test('works with one word.', () => {
+
+});
+
+test('works with string of more than one word (preserves spaces).', () => {
+
+});
+
+test('works with punctuation', () => {
+
+});
+
+test('wraps correctly.', () => {
+
+});
+
+test('only accepts strings as 1st param.', () => {
+
+});
+
+test('Only accepts numbers as second param.', () => {
+
+});
