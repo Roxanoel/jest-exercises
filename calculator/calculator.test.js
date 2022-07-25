@@ -56,3 +56,20 @@ test('multiply string numbers', () => {
 test('multiply returns NaN when params are not numbers', () => {
     expect(calculator.multiply('a', 'b')).toBe(NaN);
 });
+
+// TESTS FOR DIVIDE 
+test('divide positive numbers', () => {
+    expect(calculator.divide(4, 2)).toBe(2);
+});
+
+test('divide with a negative number', () => {
+    expect(calculator.divide(-4, 2)).toBe(-2);
+});
+
+test('dividing by zero throws an error', () => {
+    expect(calculator.divide(4, 0)).toThrow();
+});
+
+test('divide returns NaN when params are not numbers', () => {
+    expect(calculator.divide('a', 'b')).toBe(NaN);
+});
