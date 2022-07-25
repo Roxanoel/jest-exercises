@@ -39,7 +39,7 @@ test('subtract returns NaN when parameters are non-numerical strings', () => {
     expect(calculator.subtract('a', 'b')).toBe(NaN);
 });
 
-/*// TESTS FOR MULTIPLY 
+// TESTS FOR MULTIPLY 
 test('multiply positive numbers', () => {
     expect(calculator.multiply(2, 4)).toBe(8);
 });
@@ -56,7 +56,7 @@ test('multiply returns NaN when params are not numbers', () => {
     expect(calculator.multiply('a', 'b')).toBe(NaN);
 });
 
-// TESTS FOR DIVIDE 
+/*// TESTS FOR DIVIDE 
 test('divide positive numbers', () => {
     expect(calculator.divide(4, 2)).toBe(2);
 });

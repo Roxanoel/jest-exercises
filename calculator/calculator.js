@@ -9,7 +9,9 @@ const calculator = (() => {
         subtract: (num1, num2) => { 
             return num1 - num2;
          },
-        multiply: () => { console.log('not implemented') },
+        multiply: (num1, num2) => { 
+            return (num1 * num2);
+         },
         divide: () => { console.log('not implemented') },
     }
     
