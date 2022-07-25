@@ -1,12 +1,14 @@
 // Factory for calculator object
-const calculator = ((num1, num2) => {
+const calculator = (() => {
     'use struct';
 
     return {
         add: (num1, num2) => {
             return +num1 + +num2;
         },
-        subtract: () => { console.log('not implemented') },
+        subtract: (num1, num2) => { 
+            return num1 - num2;
+         },
         multiply: () => { console.log('not implemented') },
         divide: () => { console.log('not implemented') },
     }
