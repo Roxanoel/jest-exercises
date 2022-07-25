@@ -24,3 +24,18 @@ test ('add returns NaN when fed strings other than numeric', () => {
 })
 
 // TESTS FOR SUBTRACT 
+test('subtract works with two positive numbers', () => {
+    expect(calculator.subtract(4, 3)).toBe(1);
+})
+
+test ('subtract with negative number', () => {
+    expect(calculator.subtract(4, -3)).toBe(7);
+});
+
+test ('subtract with numbers passed as strings', () => {
+    expect(calculator.subtract('4', '3')).toBe(1);
+});
+
+test('subtract returns NaN when parameters are non-numerical strings', () => {
+    expect(calculator.subtract('a', 'b')).toBe(NaN);
+});
